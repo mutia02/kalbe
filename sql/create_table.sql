@@ -36,8 +36,8 @@ CREATE TABLE "codriver" (
 
 CREATE TABLE "shipment" (
   "id" varchar(9) PRIMARY KEY,
-  "sending_time" datetime,
-  "delivered_time" datetime
+  "sending_time" TIMESTAMP,
+  "delivered_time" TIMESTAMP
 );
 
 CREATE TABLE "shipment_product" (
