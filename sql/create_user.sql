@@ -1,0 +1,4 @@
+CREATE USER backend_user WITH PASSWORD 'password';
+
+GRANT USAGE ON SCHEMA app TO backend_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA app TO backend_user;
